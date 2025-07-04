@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <!-- nav section -->
+    <div class="first_section">
+     <img class="first_image" src="image3.avif" alt="">  
+    <nav>
+        <div class="nav-container">
+          <div class="logo">WORLD</div><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cityguide.html">City Guide</a></li>
+            <li><a href="#">Services</a></li>
+             <li><a href="travel.html">Travel with us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+    </nav>
+    <!-- body elements -->
+     <div class="row">
+        <div class="col-md-8 first">
+            <div class="container">
+           <H2 class="health">Explore the world<br>
+                At ease.</H3>
+                
+        </div>
+    </div> 
+    <!-- right side table -->
+        <div class="col-md-10 second form-box">
+    <form>
+      <div class="form-group">
+        <div>
+          <label for="from">From</label>
+          <select id="from">
+            <option>Australia</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>Japan</option>
+            <option>Maldives</option>
+            <option>Indonesia</option>
+            <option>Thailand</option>
+            <option>South korea</option>
+            <option>China</option>
+
+          </select>
+        </div>
+        <div>
+          <label for="to">To</label>
+          <select id="to">
+             <option>Australia</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>Japan</option>
+            <option>Maldives</option>
+            <option>Indonesia</option>
+            <option>Thailand</option>
+            <option>South korea</option>
+            <option>China</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div>
+          <label for="departure">Departure</label>
+          <input type="date" id="departure">
+        </div>
+        <div>
+          <label for="arrival">Arrival</label>
+          <input type="date" id="arrival">
+        </div>
+      </div>
+
+      <div class="radio-group">
+        <label><input type="radio" name="trip" value="round"> Round</label>
+        <label><input type="radio" name="trip" value="oneway"> Oneway</label>
+      </div>
+
+      <button type="submit" class="submit-btn"onclick="open()">SUBMIT</button>
+    </form>
+  </div>
+    </div>
+    </div>
+    <section class="places">
+        <div class="place_title">Top places around the world</div>
+        <div class="gallery">
+        <a href="">
+            <img src="australia1.avif"  width="300px" height="400px">
+            <div class="client-overlay"><span>Australia</span></div>
+        </a>
+        <a href="">
+            <img src="india1.avif" width="300px" height="400px">
+            <div class="client-overlay"><span>India</span></div>
+       </a>
+        <a href="">
+            <img src="japan1.avif" width="300px" height="400px">
+            <div class="client-overlay"><span>Japan</span></div>
+        </a>
+        <a href="">
+            <img src="china2.avif" width="300px" height="400px">
+            <div class="client-overlay"><span>China</span></div>
+       </a>
+        <a href="">
+            <img src="southkorea1.avif" width="300px" height="400px">
+            <div class="client-overlay"><span>South Korea</span></div>
+        </a>
+        <a href="">
+          
+            <img src="thailand1.avif" width="300px" height="400px">
+            <div class="client-overlay"><span>Thailand</span></div>
+            
+       </a>
+        <a href="">     
+        <img src="indonesia1.avif" width="300px" height="400px">
+            <div class="client-overlay"><span>Indonesia</span></div>
+       </a>
+      <a href="">
+            <img src="maldives1.avif" width="300px" height="400px">
+            <div class="client-overlay"><span>Maldives</span></div>
+       </a>
+    </div>
+    </section>
+    <!-- travel with us -->
+    <section class="logos">
+      <h2 class="place_title">Travel with us</h2>
+ <div class="scroll-container-wrapper"> 
+   <button onclick="scrollLeft()">&#10094;</button> 
+  <div class="scroll-container"  id="imageGallery">
+    <div class="image-wrapper">
+    <img src="marina.png" alt="Image description" />
+    <div class="hover-text">marina</div>
+  </div>
+ <div class="image-wrapper">
+    <img src="kerk.png" alt="Image description" />
+    <div class="hover-text">Kerk</div>
+  </div>
+  <div class="image-wrapper">
+    <img src="india.png" alt="Image description" />
+    <div class="hover-text">India</div>
+  </div>
+  <div class="image-wrapper">
+    <img src="burj-al-arab.jpg" alt="Image description" />
+    <div class="hover-text">Burj-al-arab</div>
+  </div>
+  <div class="image-wrapper">
+    <img src="london.png" alt="Image description" />
+    <div class="hover-text">London</div>
+  </div>
+  <div class="image-wrapper">
+    <img src="royal musuem.png" alt="Image description" />
+    <div class="hover-text">Royal Musuem</div>
+  </div>
+  <div class="image-wrapper">
+    <img src="teatro.png" alt="Image description" />
+    <div class="hover-text">Teatro</div>
+  </div>
+
+<div class="image-wrapper">
+    <img src="pisa.png" alt="Image description" />
+    <div class="hover-text">Pisa</div>
+  </div>
+<div class="image-wrapper">
+    <img src="sammara.png" alt="Image description" />
+    <div class="hover-text">Sammara</div>
+  </div>
+  <div class="image-wrapper">
+    <img src="tajmahal.png" alt="Image description" />
+    <div class="hover-text">Taj Mahal</div>
+  </div>
+
+    
+
+  </div>
+
+   <button onclick="scrollRight()">&#10095;</button> 
+</div>
+
+
+
+    </section>
+    <section class="contactus">
+      <h2 class="place_title">Contact Us</h2>
+    <div class="contact-section">
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p>Any queries feel free to contact and we are here to help you anytime...</p>
+      <ul>
+        <li><strong>Email:</strong> suhanasnr9@@gmail.com</li>
+        <li><strong>Fax:</strong> +30 976 1382 9922</li>
+        <li><strong>Phone:</strong> +919344507929</li>
+        <li><strong>Address:</strong> San Francisco, CA<br>4th Floor, 8 Lower<br>San Francisco Street, M1 50F</li>
+      </ul>
+    </div>
+
+    <div class="contact-form">
+      <form  method="POST">
+        <div class="form-row">
+          <input type="text" name="first_name" placeholder="First Name" required>
+          <input type="text" name="last_name" placeholder="Last Name" required>
+        </div>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Write your message" required></textarea>
+        <button  class="contact-button" type="submit">SEND MESSAGE</button>
+      </form>
+    </div>
+  </div>
+  </section>
+    <script>
+      function scrollLeft() {
+        document.getElementById('imageGallery').scrollBy({
+        left: -320,
+        behavior: 'smooth'
+  });
+}
+
+function scrollRight() {
+  document.getElementById('imageGallery').scrollBy({
+    left: 320,
+    behavior: 'smooth'
+  });
+}
+function open(){
+  window.location.href = "pricing.html";
+}
+    </script>
+</body>
+</html>
